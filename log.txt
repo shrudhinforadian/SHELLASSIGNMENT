@@ -1,0 +1,1 @@
+Mon Oct 21 12:32:21 IST 2019  Source Path:/home/shrudhin/  Extension:sh  Destination Path:/home/shrudhin/  Compressed file:test.tar
