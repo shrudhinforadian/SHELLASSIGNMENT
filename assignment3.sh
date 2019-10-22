@@ -44,7 +44,7 @@ compress(){
 	d=`date`
 	cd $dir
 	tar -czf  $dest$file.tar.gz  *.$ext
-	cd $dest
+	cd $path
 	if [ -f  "$file".tar.gz ]
 	then
 		echo "Compression completed successfully"
@@ -57,7 +57,7 @@ compress(){
 end(){
 	echo "process terminated due to insufficient data"
 	}
-	
+path=`pwd`	
 echo "enter the path ('eg:/home/shrudhin/')"
 read dir
 if [ -z "$dir" ]
