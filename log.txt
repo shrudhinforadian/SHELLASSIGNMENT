@@ -1,0 +1,2 @@
+Tue Oct 22 15:00:56 IST 2019 User:shrudhin  Source Path:/home/shrudhin/  Extension:txt  Destination Path:/home/shrudhin/  Compressed file:too.tar.gz
+Tue Oct 22 15:01:59 IST 2019 User:shrudhin  Compression Failed

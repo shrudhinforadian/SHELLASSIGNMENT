@@ -44,12 +44,14 @@ compress(){
 	d=`date`
 	cd $dir
 	tar -czf  $dest$file.tar.gz  *.$ext
-	cd $path
+	cd $dest
 	if [ -f  "$file".tar.gz ]
 	then
+		cd $path
 		echo "Compression completed successfully"
 		echo $d" User:"$user"  Source Path:"$dir"  Extension:"$ext"  Destination Path:"$dest"  Compressed file:"$file".tar.gz">>log.txt
 	else
+		cd $path
 		echo "Due to Some Compression errors compression not completed succcessfully"
 		echo $d" User:"$user"  Compression Failed">>log.txt
 	fi	
