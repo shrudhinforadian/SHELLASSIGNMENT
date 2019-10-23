@@ -1,3 +1,4 @@
+#Function For Reading the Extension
 readextension()
 	{
 	echo "enter the extension ('eg:.txt,.sh.....')"
@@ -9,6 +10,7 @@ readextension()
 		  readdestination
 	fi
 	}
+#Function For Reading the Source Path	
 readpath(){
 	echo "Please Enter the path ('eg:/home/shrudhin/')"
 	read dir
@@ -19,6 +21,7 @@ readpath(){
 		readextension
 	fi
 	}
+#Function for treading the destination path	
 readdestination(){
 	echo "enter the destination ('eg:/home/shrudhin/')"
 	read dest
@@ -29,6 +32,7 @@ readdestination(){
 		 readcompress
 	fi
 	}
+#Function For Reading the File Name to be saved after compression	
 readcompress(){
 	echo "enter the file name ('eg:test,trial,.....')"
 	read file
@@ -39,6 +43,7 @@ readcompress(){
 		 compress
 	fi
 	}
+#Function for Compression Stage	
 compress(){
 	user=`whoami`
 	d=`date`
@@ -56,9 +61,11 @@ compress(){
 		echo $d" User:"$user"  Compression Failed">>log.txt
 	fi	
 	}
+#Termination Function	
 end(){
 	echo "process terminated due to insufficient data"
 	}
+#Start From here	
 path=`pwd`	
 echo "enter the path ('eg:/home/shrudhin/')"
 read dir
